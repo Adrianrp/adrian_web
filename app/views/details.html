@@ -1,0 +1,15 @@
+<div class="container">
+<section class="worksInfo">
+  <a href="#/details/{{prevItem}}" class="btn btn-primary btn-sm">prev</a>
+  <a href="#/details/{{nextItem}}" class="btn btn-primary btn-sm">next</a>
+  <div ng-model="works">
+    <h1>{{works[whichItem].title}}</h1>
+    <img class="img-responsive" ng-src="images/{{works[whichItem].image}}.jpg" alt="">
+    <div class="details">
+      <p>{{works[whichItem].technique}}</p>
+      <p>{{works[whichItem].year}}</p>
+      <a href="index.html">&laquo; Back to Search</a>
+    </div>
+  </div>
+</section>
+</div>

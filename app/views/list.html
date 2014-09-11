@@ -22,8 +22,10 @@
   <div class="col-sm-6 col-md-3">
      <div class="row">
       <div class="thumbnail" ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
-      <img ng-src="images/{{item.image}}.jpg" class="img-responsive" alt="photo of {{item.title}}">
-      <div class="caption">{{item.title}}</div>
+      <a href="#/details/{{works.indexOf(item)}}">
+        <img ng-src="images/{{item.image}}.jpg" class="img-responsive" alt="photo of {{item.title}}">
+        <div class="caption">{{item.title}}</div>
+      </a>
       <p>{{item.technique}}</p>
       <p>{{item.tags}}</p>
       <p>{{item.year}}</p>
