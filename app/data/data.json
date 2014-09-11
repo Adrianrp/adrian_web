@@ -1,0 +1,32 @@
+[
+  {
+    "title":"Paradise",
+    "image":"paradise",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2010"
+  },
+  {
+    "title":"Anato",
+    "image":"paradise",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2014"
+  },
+  {
+    "title":"Charles",
+    "image":"paradise",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"1984"
+  }
+]
