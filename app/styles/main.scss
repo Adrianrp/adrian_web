@@ -9,11 +9,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   color: #000;
   padding: 0.2em 0;
 }
-
+ul {
+  list-style: none;
+}
 /* Space out content a bit */
 body {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 20px;
+  background-color: #f0f0f0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -25,6 +28,14 @@ body {
 }
 
 /* Custom page header */
+.navbar-default .navbar-brand {
+  color: white;
+  transition: all 0.1s linear;
+
+  &:hover {
+    color:red;
+  }
+}
 .header {
 
   /* Make the masthead heading the same height as the navigation */
@@ -90,6 +101,68 @@ body {
   }
 }
 
-// .navbar-default {
-//   background-color: black;
+.navbar-default {
+  background-color: #333;
+}
+
+.workBox {
+
+  caption {
+    text-align: center;
+  }
+
+}
+.title-works {
+    font-size: 1em;
+    text-align:center;
+    line-height: .1;
+    color: rgb(88,0,0);
+  }
+
+ul.info-works {
+    padding-left: 0;
+  li {
+    float: left;
+    color: #a1a1a1;
+    font-size: .9em;
+    //font-weight: 700;
+  }
+}
+li.year {
+      float:left;
+    }
+
+.thumbnail {
+  //max-height: 230px;
+}
+.workBox:hover {
+  //opacity: 1;
+}
+
+.workBox.ng-enter.ng-enter-active,
+.workBox.ng-leave {
+  transition: all 0.2s cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  opacity: 1;
+}
+.workBox.ng-leave.ng-leave-active,
+.workBox.ng-active {
+  //transition: all 0.3s ease-out;
+  opacity: 0;
+}
+
+// .workBox.ng-move {
+//   transition: all 0.2s ease-out;
+//   opacity: 1;
 // }
+// .workBox.ng-move-active {
+//   //transition: all 0.2s ease-out;
+//   opacity: 0;
+// }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 470px) {
+.col-xs-6, .col-md-3{
+    padding-left: 5px;
+    padding-right: 5px
+  }
+}

@@ -5,8 +5,10 @@
     </div>
     <label>by:
       <select ng-model="workOrder">
+        <option value="price">price</option>
         <option value="year">year</option>
         <option value="title">title</option>
+
       </select>
     </label>
 
@@ -19,17 +21,22 @@
       descending
       </label>
   </div>
-  <div class="col-sm-6 col-md-3">
+  
      <div class="row">
-      <div class="thumbnail" ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
+      <div class="workBox col-xs-6 col-md-3" ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
+      <div class="thumbnail">
       <a href="#/details/{{works.indexOf(item)}}">
-        <img ng-src="images/{{item.image}}.jpg" class="img-responsive" alt="photo of {{item.title}}">
-        <div class="caption">{{item.title}}</div>
-      </a>
-      <p>{{item.technique}}</p>
-      <p>{{item.tags}}</p>
-      <p>{{item.year}}</p>
-    </div>
+        <img ng-src="images/{{item.image}}.jpg" class="img-responsive" alt="photo of {{item.title}}"></a>
+        <div class="caption">
+        <ul class="info-works">
+          <li class="year">
+          <span class="glyphicon glyphicon-calendar"></span>
+          {{item.year}}</li>
+          <li class="pull-right">{{item.price}}.-</li>
+        </ul>
+        </div>
+        </div>
+        <h3 class="title-works">{{item.title}}</h3>
    </div>
   </div>
 </div>

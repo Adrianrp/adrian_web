@@ -7,26 +7,29 @@
               "yellow",
               "cells",
               "people"],
-    "year":"2010"
+    "year":"2010",
+    "price":"20.000"
   },
   {
-    "title":"Anato",
-    "image":"paradise",
+    "title":"Flamingo Oasis",
+    "image":"flamingo_oasis",
     "technique": "Acrylic, collage, pencil on canvas",
     "tags":["red",
               "yellow",
               "cells",
               "people"],
-    "year":"2014"
+    "year":"2012",
+    "price":"15.000"
   },
   {
-    "title":"Charles",
-    "image":"paradise",
+    "title":"Return to the promised land",
+    "image":"Promised_land",
     "technique": "Acrylic, collage, pencil on canvas",
     "tags":["red",
               "yellow",
               "cells",
               "people"],
-    "year":"1984"
+    "year":"2013",
+    "price":"10.000"
   }
 ]
