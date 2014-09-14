@@ -17,7 +17,7 @@ angular.module('adrianWebApp')
     ];
     $http.get('data/data.json').success(function (data) {
       $scope.works = data;
-      $scope.workOrder = 'price';
+      $scope.workOrder = 'year';
       $scope.direction = 'reverse';
     });
   });

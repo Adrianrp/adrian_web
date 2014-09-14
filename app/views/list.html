@@ -1,42 +1,44 @@
-<div class="container" ng-controller="ListCtrl">
+<div ng-controller="ListCtrl">
   <div class="search row">
-    <div class="col-xs-4">
-    <input ng-model="query" type="text" class="form-control" placeholder="Text input" autofocus>
+  <div class="col-xs-12 col-md-4">
+    <div class="form-group">
+    <input ng-model="query" type="text" class="form-control" placeholder="Search Bar" autofocus>
     </div>
-    <label>by:
-      <select ng-model="workOrder">
-        <option value="price">price</option>
+    <div class="form-group pull-right">
+    <label>
+      <select class="form-control" ng-model="workOrder">
         <option value="year">year</option>
+        <option value="price">price</option>
         <option value="title">title</option>
-
       </select>
     </label>
-
+    </div>
+    <div class="radio">
     <label>
       <input type="radio" ng-model="direction" name="direction">
       ascending
       </label>
+      </div>
+      <div class="radio">
       <label>
       <input type="radio" ng-model="direction" name="direction" value="reverse">
       descending
       </label>
+      </div>
+      </div></div>
   </div>
-  
-     <div class="row">
-      <div class="workBox col-xs-6 col-md-3" ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
-      <div class="thumbnail">
-      <a href="#/details/{{works.indexOf(item)}}">
-        <img ng-src="images/{{item.image}}.jpg" class="img-responsive" alt="photo of {{item.title}}"></a>
-        <div class="caption">
-        <ul class="info-works">
-          <li class="year">
+ <!-- END SEARCH BAR -->
+    <div>
+      <ul class="works-grid columns-4">
+        <li class="fader" ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
+          <a href="#/details/{{works.indexOf(item)}}">
+          <img ng-src="images/{{item.image}}.jpg" alt="photo of {{item.title}}"></a>
+          <p class="info-list">
           <span class="glyphicon glyphicon-calendar"></span>
-          {{item.year}}</li>
-          <li class="pull-right">{{item.price}}.-</li>
-        </ul>
-        </div>
-        </div>
-        <h3 class="title-works">{{item.title}}</h3>
-   </div>
-  </div>
+          {{item.year}} <span class="pull-right">{{item.price}}.-</span></p>
+        </li>
+      </ul>
+
+    </div>
+
 </div>

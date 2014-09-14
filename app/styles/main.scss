@@ -3,6 +3,24 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// Variables
+$neutral-color: #898989;
+$primary-color: #e70000;
+
+$font-sans: Source Sans Pro, sans-serif;
+$font-serif: Neuton, serif;
+
+$borders: 1px solid #d2d0c6;
+// End variables
+
+// Mixin
+@mixin border-radius($radius: 3px) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -17,6 +35,7 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: #f0f0f0;
+  font: 16px $font-sans;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -45,6 +64,12 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+.logo-icon {
+  float: left;
+  margin: 10px 2% 0 0;
+  max-height: 36px;
+
 }
 
 /* Custom page footer */
@@ -104,7 +129,7 @@ body {
 .navbar-default {
   background-color: #333;
 }
-
+/*------------------------- LIST OF WORKS SECTION ----------------------*/
 .workBox {
 
   caption {
@@ -125,44 +150,148 @@ ul.info-works {
     float: left;
     color: #a1a1a1;
     font-size: .9em;
-    //font-weight: 700;
   }
 }
-li.year {
-      float:left;
-    }
-
+p.info-list {
+    font: 1.4em $font-sans;
+    margin-bottom: 0;
+    margin-top: 9px;
+    color: $neutral-color;
+    font-weight: 300;
+}
 .thumbnail {
   //max-height: 230px;
 }
 .workBox:hover {
   //opacity: 1;
 }
+.fader {
+  @include border-radius;
 
-.workBox.ng-enter.ng-enter-active,
-.workBox.ng-leave {
+  a {
+    display: block;
+    height:150px;
+    overflow:hidden;
+  } 
+}
+.fader.ng-enter.ng-enter-active,
+.fader.ng-leave {
   transition: all 0.2s cubic-bezier(0.250, 0.250, 0.750, 0.750);
   opacity: 1;
 }
-.workBox.ng-leave.ng-leave-active,
-.workBox.ng-active {
+.fader.ng-leave.ng-leave-active,
+.fader.ng-active {
   //transition: all 0.3s ease-out;
   opacity: 0;
 }
+.search {
+  margin-bottom: 20px;
+}
 
-// .workBox.ng-move {
-//   transition: all 0.2s ease-out;
-//   opacity: 1;
-// }
-// .workBox.ng-move-active {
-//   //transition: all 0.2s ease-out;
-//   opacity: 0;
-// }
+/*Test of grid images*/
 
-/* Responsive: Portrait tablets and up */
-@media screen and (max-width: 470px) {
+ul.works-grid {
+  font-size: 0px;
+  margin-left: -2.5%;
+  padding-left: 0px;
+
+    li {
+      margin: 0 0 2.5% 2.5%;
+      display: inline-block;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      font-size: 1rem;
+      vertical-align: top;
+      box-shadow: 0 0 5px #ddd;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 10px;
+      }
+    }
+}
+ul.works-grid.columns-4 li {
+  width: 22.5%; /* this value + 2.5 should = 25% */
+}
+/*------------------------- DETAILS SECTION ----------------------*/
+.head-section {
+  border-bottom: $borders;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.dir-arrows {
+  padding-top: 25px;
+
+  a {
+    //margin-right: 2.0618556701030927%; /* 20 / 970 */
+  }
+}
+p.summary {
+  line-height: 1.2em;
+  font-weight: 300;
+}
+.order-print {
+  padding-left: 20px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      display:block;
+      padding-top: 40px;
+  }
+    a {
+      font-size: 3rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+}
+.color-me {
+  color: #a7a7a7;
+  font: .9em $font-sans;
+}
+/*------------------------- BIO SECTION ----------------------*/
+.cvDate {
+  font-style: italic;
+  color: $primary-color;
+  padding-right: 4.1237113402061855%; /* 20 / 485 */
+}
+.quote-banner {
+  font-size: 1.5em;
+  margin: 15px 10.309278350515463%; /* 100 / 970 */
+}
+.circular {
+  width: 100px;
+  height: 100px;
+  @include border-radius(150px);
+  background: url(../images/color_bg.jpg) no-repeat;
+}
+/*----------------------------------------------------*/
+/* Responsive: Phones */
+@media screen and (max-width: 480px) {
 .col-xs-6, .col-md-3{
     padding-left: 5px;
     padding-right: 5px
+  }
+  ul.works-grid {
+    margin-left: 0;
+
+    li {
+      width: 100% !important;
+      margin: 0 0  20px;
+    }
+  }
+  .fader a {
+    height: 250px;
+  }
+  .search {
+    margin-top: 20px;
   }
 }

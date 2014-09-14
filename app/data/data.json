@@ -8,7 +8,9 @@
               "cells",
               "people"],
     "year":"2010",
-    "price":"20.000"
+    "price":"20.000",
+    "intro":"The place that everybody is looking for.",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
   },
   {
     "title":"Flamingo Oasis",
@@ -19,7 +21,9 @@
               "cells",
               "people"],
     "year":"2012",
-    "price":"15.000"
+    "price":"15.000",
+    "intro":"Hollywood resting place for pensionists.",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
   },
   {
     "title":"Return to the promised land",
@@ -30,6 +34,125 @@
               "cells",
               "people"],
     "year":"2013",
-    "price":"10.000"
+    "price":"10.000",
+    "intro":"After a long walk there is mainly more green parts to cover.",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"The serpent enchanter",
+    "image":"serpent_enchanter",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2012",
+    "price":"15.000",
+    "intro":"Reminder from a far away place",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"Chain reaction",
+    "image":"chain_reaction",
+    "technique": "Acrylic, collage, pencil on paper",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2011",
+    "price":"7.000",
+    "intro":"Trauma travel twist",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"Martian grass",
+    "image":"martian_grass",
+    "technique": "Acrylic, collage, pencil on paper",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2010",
+    "price":"7.000",
+    "intro":"Where is that I am",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"Igloo",
+    "image":"igloo",
+    "technique": "Acrylic, collage, pencil on paper",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2010",
+    "price":"5.000",
+    "intro":"Your new home will like this one",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"Return of the striped people",
+    "image":"Pants_people",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2009",
+    "price":"16.000",
+    "intro":"When they returned everything was changed.",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"Saturn",
+    "image":"Saturn",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2012",
+    "price":"16.000",
+    "intro":"Saturn devouring his children.",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"A day like this one",
+    "image":"a_day_like",
+    "technique": "Acrylic, collage, pencil on paper",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2008",
+    "price":"10.000",
+    "intro":"Coming to thoughts",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"Departure",
+    "image":"departure",
+    "technique": "Acrylic, collage, pencil on paper",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2007",
+    "price":"10.500",
+    "intro":"Trauma travel twist",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
+  },
+  {
+    "title":"The Kingdom",
+    "image":"kingdom",
+    "technique": "Acrylic, collage, pencil on canvas",
+    "tags":["red",
+              "yellow",
+              "cells",
+              "people"],
+    "year":"2013",
+    "price":"35.000",
+    "intro":"Sankt Hans Torv",
+    "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores, at, nulla aspernatur libero officia autem quidem nihil, non quos consequatur fuga, fugit impedit rem obcaecati. Nulla hic, voluptates ducimus!"
   }
 ]

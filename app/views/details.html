@@ -1,14 +1,36 @@
-<div class="container">
+<div>
 <section class="worksInfo">
-  <a href="#/details/{{prevItem}}" class="btn btn-primary btn-sm">prev</a>
-  <a href="#/details/{{nextItem}}" class="btn btn-primary btn-sm">next</a>
-  <div ng-model="works">
-    <h1>{{works[whichItem].title}}</h1>
+  <div ng-model="works" class="">
     <img class="img-responsive" ng-src="images/{{works[whichItem].image}}.jpg" alt="">
     <div class="details">
-      <p>{{works[whichItem].technique}}</p>
-      <p>{{works[whichItem].year}}</p>
+      <div class="head-section clearfix">
+      <h1 class="pull-left">{{works[whichItem].title}}</h1>
+        <div class="pull-right dir-arrows">
+        <a href="#/details/{{prevItem}}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#/details/{{nextItem}}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-right"></a>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-xs-12 col-md-8">
+      <p class="color-me pull-right"><strong>From: </strong>{{works[whichItem].year}}</p>
+      <p class="color-me"><strong>Technique: </strong>{{works[whichItem].technique}}</p>
+      <p class="color-me"><strong>Price: </strong>{{works[whichItem].price}}</p>
+      <h3 class="clearfix">{{works[whichItem].intro}}</h3>
+      <blockquote>
+      <p class="summary">{{works[whichItem].summary}}</p>
+      </blockquote>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="order-print">
+        <p>Work available:</p>
+        
+        <a href="#">Buy work</a>
+        <img ng-src="images/social.png" alt="">
+        </div>
+      </div>
+      </div>
       <a href="index.html">&laquo; Back to Search</a>
+      <p>&nbsp</p>
     </div>
   </div>
 </section>
